@@ -1,0 +1,168 @@
+//
+// Copyright (C) 2019 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+cc_prebuilt_library_shared {
+    name: "libfeature_support_angle",
+    arch: {
+        arm: {
+            srcs: ["lib/arm/libfeature_support_angle.so"],
+        },
+        arm64: {
+            srcs: ["lib/arm64/libfeature_support_angle.so"],
+        },
+        x86: {
+            srcs: ["lib/x86/libfeature_support_angle.so"],
+        },
+        x86_64: {
+            srcs: ["lib/x86_64/libfeature_support_angle.so"],
+        },
+    },
+    strip: {
+        none:true,
+    },
+
+    // Required to 'install' shared objects to /product
+    product_specific: true
+}
+
+cc_prebuilt_library_shared {
+    name: "libEGL_angle",
+    arch: {
+        arm: {
+            srcs: ["lib/arm/libEGL_angle.so"],
+        },
+        arm64: {
+            srcs: ["lib/arm64/libEGL_angle.so"],
+        },
+        x86: {
+            srcs: ["lib/x86/libEGL_angle.so"],
+        },
+        x86_64: {
+            srcs: ["lib/x86_64/libEGL_angle.so"],
+        },
+    },
+    strip: {
+        none:true,
+    },
+
+    // Required to 'install' shared objects to /product
+    product_specific: true
+}
+
+cc_prebuilt_library_shared {
+    name: "libGLESv1_CM_angle",
+    arch: {
+        arm: {
+            srcs: ["lib/arm/libGLESv1_CM_angle.so"],
+        },
+        arm64: {
+            srcs: ["lib/arm64/libGLESv1_CM_angle.so"],
+        },
+        x86: {
+            srcs: ["lib/x86/libGLESv1_CM_angle.so"],
+        },
+        x86_64: {
+            srcs: ["lib/x86_64/libGLESv1_CM_angle.so"],
+        },
+    },
+    strip: {
+        none:true,
+    },
+
+    // Required to 'install' shared objects to /product
+    product_specific: true
+}
+
+cc_prebuilt_library_shared {
+    name: "libGLESv2_angle",
+    arch: {
+        arm: {
+            srcs: ["lib/arm/libGLESv2_angle.so"],
+        },
+        arm64: {
+            srcs: ["lib/arm64/libGLESv2_angle.so"],
+        },
+        x86: {
+            srcs: ["lib/x86/libGLESv2_angle.so"],
+        },
+        x86_64: {
+            srcs: ["lib/x86_64/libGLESv2_angle.so"],
+        },
+    },
+    strip: {
+        none:true,
+    },
+
+    // Required to 'install' shared objects to /product
+    product_specific: true
+}
+
+java_defaults {
+    name: "ANGLE_defaults",
+    sdk_version: "28",
+    compile_multilib: "both",
+    use_embedded_native_libs: true,
+
+    resource_dirs: ["res"],
+
+    asset_dirs: ["assets"],
+
+    srcs: ["src/com/android/angle/common/*.java"],
+
+    aaptflags: [
+        // Don't compress *.json files
+        "-0 .json",
+        // Give com.android.angle.common Java files access to the R class
+        "--extra-packages com.android.angle.common",
+    ],
+
+    jni_libs: [
+        "libfeature_support_angle",
+        "libEGL_angle",
+        "libGLESv1_CM_angle",
+        "libGLESv2_angle",
+    ],
+
+    static_libs: [
+        "androidx.preference_preference",
+    ],
+
+    product_specific: true,
+    privileged: true,
+}
+
+android_app {
+    name: "AospANGLE",
+
+    defaults: ["ANGLE_defaults"],
+
+    srcs: ["src/com/android/angle/*.java"],
+
+    manifest: "src/com/android/angle/AndroidManifest.xml",
+}
+
+android_app {
+    name: "GoogleANGLE",
+
+    defaults: ["ANGLE_defaults"],
+
+    srcs: ["src/com/google/android/angle/*.java"],
+
+    manifest: "src/com/google/android/angle/AndroidManifest.xml",
+
+    certificate: ":com_google_android_angle_container",
+    owner: "google",
+}
