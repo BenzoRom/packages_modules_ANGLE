@@ -30,6 +30,7 @@ cc_prebuilt_library_shared {
             srcs: ["lib/x86_64/libfeature_support_angle.so"],
         },
     },
+    shared_libs: ["libc", "libdl", "liblog", "libm"],
     strip: {
         none:true,
     },
@@ -54,6 +55,7 @@ cc_prebuilt_library_shared {
             srcs: ["lib/x86_64/libEGL_angle.so"],
         },
     },
+    shared_libs: ["libc", "libdl"],
     strip: {
         none:true,
     },
@@ -78,6 +80,7 @@ cc_prebuilt_library_shared {
             srcs: ["lib/x86_64/libGLESv1_CM_angle.so"],
         },
     },
+    shared_libs: ["libGLESv2_angle", "libc", "libdl"],
     strip: {
         none:true,
     },
@@ -102,6 +105,9 @@ cc_prebuilt_library_shared {
             srcs: ["lib/x86_64/libGLESv2_angle.so"],
         },
     },
+    shared_libs: [
+        "libc", "libdl", "liblog", "libm", "libnativewindow", "libvulkan",
+    ],
     strip: {
         none:true,
     },
