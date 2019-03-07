@@ -33,4 +33,8 @@
     'angle' should not be translated, as it is an app name. -->
     <string name="keywords">angle, opengl, graphics</string>
 
+    <!-- This is the message displayed in the Toast to the user when ANGLE is being used for the app.
+    'ANGLE' should not be translated, as it is an app name. -->
+    <string name="angle_in_use_toast_message">Using ANGLE</string>
+
 </resources>

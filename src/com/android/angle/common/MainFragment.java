@@ -6,8 +6,6 @@
  */
 package com.android.angle.common;
 
-import android.content.Context;
-import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
@@ -36,10 +34,9 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
 
     private final String TAG = this.getClass().getSimpleName();
 
-    private static final String ACTION_REFRESH_PKGS = "com.google.android.angle.REFRESH_PKGS";
     private SharedPreferences mPrefs;
     private GlobalSettings mGlobalSettings;
-    private Receiver mRefreshReceiver;
+    private Receiver mRefreshReceiver = new Receiver();
     private SwitchPreference mAllAngleSwitchPref;
     private SwitchPreference mShowAngleInUseDialogSwitchPref;
     private List<PackageInfo> mInstalledPkgs      = new ArrayList<>();
@@ -66,14 +63,6 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
 
         mGlobalSettings = new GlobalSettings(getContext(), mInstalledPkgs);
         mergeGlobalSettings();
-
-        mRefreshReceiver = new Receiver() {
-            @Override
-            public void onReceive(Context context, Intent intent)
-            {
-                getInstalledPkgsList();
-            }
-        };
 
         String allUseAngleKey = getContext().getString(R.string.pref_key_all_angle);
         Boolean allUseAngle   = mPrefs.getBoolean(allUseAngleKey, false);
@@ -126,7 +115,9 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
     {
         super.onResume();
 
-        getActivity().registerReceiver(mRefreshReceiver, new IntentFilter(ACTION_REFRESH_PKGS));
+        getActivity().registerReceiver(mRefreshReceiver,
+                new IntentFilter(
+                        getContext().getString(R.string.intent_angle_for_android_toast_message)));
         getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(
                 listener);
     }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2019 The ANGLE Project Authors. All rights reserved.  Use of this
+  source code is governed by a BSD-style license that can be found in the
+  LICENSE file.
+-->
+
+<resources>
+    <string name="intent_angle_for_android_toast_message">android.app.action.ANGLE_FOR_ANDROID_TOAST_MESSAGE</string>
+    <string name="intent_key_a4a_toast_message">A4A Toast Message</string>
+</resources>

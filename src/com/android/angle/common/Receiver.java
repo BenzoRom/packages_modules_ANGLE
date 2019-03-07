@@ -10,6 +10,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
@@ -23,21 +24,27 @@ import java.io.InputStream;
 public class Receiver extends BroadcastReceiver
 {
 
-    private final static String TAG = "AngleReceiver";
-    private final static String ANGLE_RULES_FILE = "a4a_rules.json";
+    private static final String TAG = "AngleReceiver";
+    private static final String ANGLE_RULES_FILE = "a4a_rules.json";
 
     @Override
     public void onReceive(Context context, Intent intent)
     {
-        Log.v(TAG, "Received intent, updating ANGLE whitelist...");
+        String action = intent.getAction();
+        Log.v(TAG, "Received intent: '" + action + "'");
 
-        String jsonStr = loadRules(context);
+        if (action.equals(context.getString(R.string.intent_angle_for_android_toast_message))) {
+            Bundle results = getResultExtras(true);
+            results.putString(context.getString(R.string.intent_key_a4a_toast_message),
+                    context.getString(R.string.angle_in_use_toast_message));
+        } else {
+            String jsonStr = loadRules(context);
+            String packageNames = parsePackageNames(jsonStr);
 
-        String packageNames = parsePackageNames(jsonStr);
-
-        // Update the ANGLE whitelist
-        if (packageNames != null) {
-            GlobalSettings.updateAngleWhitelist(context, packageNames);
+            // Update the ANGLE whitelist
+            if (packageNames != null) {
+                GlobalSettings.updateAngleWhitelist(context, packageNames);
+            }
         }
     }
 
