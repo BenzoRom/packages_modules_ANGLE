@@ -75,7 +75,7 @@ public class Receiver extends BroadcastReceiver
      */
     private String parsePackageNames(String rulesJSON)
     {
-        String packageNames = "";
+        StringBuilder packageNames = new StringBuilder();
 
         try {
             JSONObject jsonObj = new JSONObject(rulesJSON);
@@ -97,21 +97,20 @@ public class Receiver extends BroadcastReceiver
                     if ((appName == null) || appName.isEmpty()) {
                         Log.e(TAG, "Invalid AppName: '" + appName + "'");
                     }
-                    if (packageNames.isEmpty()) {
-                        packageNames += appName;
-                    } else {
-                        packageNames += "," + appName;
+                    if (!packageNames.toString().isEmpty()) {
+                        packageNames.append(",");
                     }
+                    packageNames.append(appName);
                 }
             }
             Log.v(TAG, "Parsed the following package names from " +
-                ANGLE_RULES_FILE + ": " + packageNames);
+                    ANGLE_RULES_FILE + ": " + packageNames);
         } catch (JSONException je) {
             Log.e(TAG, "Error when parsing angle JSON: ", je);
             return null;
         }
 
-        return packageNames;
+        return packageNames.toString();
     }
 
     static void updateAllUseAngle(Context context)
