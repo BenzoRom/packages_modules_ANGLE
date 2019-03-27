@@ -33,6 +33,22 @@ class GlobalSettings
         setInstalledPkgs(installedPkgs);
     }
 
+    static void clearAllGlobalSettings(Context context)
+    {
+        // angle_gl_driver_all_angle
+        updateAllUseAngle(context, false);
+        // show_angle_in_use_dialog_box
+        updateShowAngleInUseDialog(context, false);
+        // angle_gl_driver_selection_pkgs, angle_gl_driver_selection_values
+        ContentResolver contentResolver = context.getContentResolver();
+        Settings.Global.putString(contentResolver,
+                context.getString(R.string.global_settings_driver_selection_pkgs), "\"\"");
+        Settings.Global.putString(contentResolver,
+                context.getString(R.string.global_settings_driver_selection_values), "\"\"");
+
+        // Skip angle_whitelist; not updatable via Developer Options
+    }
+
     Boolean getAllUseAngle()
     {
         ContentResolver contentResolver = mContext.getContentResolver();
@@ -133,7 +149,7 @@ class GlobalSettings
         return null;
     }
 
-    private void setInstalledPkgs(List<PackageInfo> installedPkgs)
+    void setInstalledPkgs(List<PackageInfo> installedPkgs)
     {
         mInstalledPkgs = installedPkgs;
 

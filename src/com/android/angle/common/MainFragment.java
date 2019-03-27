@@ -115,6 +115,10 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
     {
         super.onResume();
 
+        getInstalledPkgsList();
+        mGlobalSettings.setInstalledPkgs(mInstalledPkgs);
+        mergeGlobalSettings();
+
         getActivity().registerReceiver(mRefreshReceiver,
                 new IntentFilter(
                         getContext().getString(R.string.intent_angle_for_android_toast_message)));

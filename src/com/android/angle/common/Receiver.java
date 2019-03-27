@@ -10,9 +10,14 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.ContentObserver;
+import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import android.os.Handler;
+import android.provider.Settings;
 import android.util.Log;
+
+import androidx.preference.PreferenceManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -45,6 +50,8 @@ public class Receiver extends BroadcastReceiver
             if (packageNames != null) {
                 GlobalSettings.updateAngleWhitelist(context, packageNames);
             }
+
+            updateDeveloperOptionsWatcher(context);
         }
     }
 
@@ -134,5 +141,41 @@ public class Receiver extends BroadcastReceiver
         GlobalSettings.updateShowAngleInUseDialog(context, showAngleInUseDialogBox);
 
         Log.v(TAG, "Show 'ANGLE In Use' dialog box set to: " + showAngleInUseDialogBox);
+    }
+
+    /**
+     * When Developer Options are disabled, reset all of the global settings back to their defaults.
+     */
+    private static void updateDeveloperOptionsWatcher(Context context) {
+        Uri settingUri = Settings.Global.getUriFor(
+                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED);
+
+        ContentObserver developerOptionsObserver =
+                new ContentObserver(new Handler()) {
+                    @Override
+                    public void onChange(boolean selfChange) {
+                        super.onChange(selfChange);
+
+                        boolean developerOptionsEnabled = (1 ==
+                                Settings.Global.getInt(context.getContentResolver(),
+                                        Settings.Global.DEVELOPMENT_SETTINGS_ENABLED , 0));
+
+                        Log.v(TAG, "Developer Options enabled value changed: "
+                                + "developerOptionsEnabled = " + developerOptionsEnabled);
+
+                        if (!developerOptionsEnabled) {
+                            // Reset the necessary settings to their defaults.
+                            SharedPreferences.Editor editor =
+                                    PreferenceManager.getDefaultSharedPreferences(context).edit();
+                            editor.clear();
+                            editor.apply();
+                            GlobalSettings.clearAllGlobalSettings(context);
+                        }
+                    }
+                };
+
+        context.getContentResolver().registerContentObserver(settingUri,
+                false, developerOptionsObserver);
+        developerOptionsObserver.onChange(true);
     }
 }
