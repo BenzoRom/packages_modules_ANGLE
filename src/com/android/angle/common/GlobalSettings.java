@@ -46,6 +46,11 @@ class GlobalSettings
         Settings.Global.putString(contentResolver,
                 context.getString(R.string.global_settings_driver_selection_values), "\"\"");
 
+        // For completeness, we'll clear the angle_debug_package, but we don't allow setting
+        // it via the APK (currently)
+        Settings.Global.putString(contentResolver,
+                context.getString(R.string.global_settings_angle_debug_package), "");
+
         // Skip angle_whitelist; not updatable via Developer Options
     }
 
