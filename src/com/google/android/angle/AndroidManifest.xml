@@ -6,14 +6,14 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="100"
-          android:versionName="100"
+          android:versionCode="200000000"
+          android:versionName="200000000"
           package="com.google.android.angle">
 
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
-    <uses-sdk android:minSdkVersion="26"
+    <uses-sdk android:minSdkVersion="28"
               android:targetSdkVersion="28">
     </uses-sdk>
 
@@ -56,7 +56,7 @@
         <receiver android:name="com.android.angle.common.Receiver"
                   android:directBootAware="true">
             <intent-filter>
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_BOOT_COMPLETED" />
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
                 <action android:name="android.app.action.ANGLE_FOR_ANDROID_TOAST_MESSAGE" />
             </intent-filter>
