@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Copyright 2018 The ANGLE Project Authors. All rights reserved.  Use of this
+  source code is governed by a BSD-style license that can be found in the
+  LICENSE file.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="angle_preferences" msgid="265396893685363605">"ആംഗിൾ മുൻഗണനകൾ"</string>
+    <string name="angle_preferences_summary" msgid="6924507658538947826">"ആംഗിൾ ക്രമീകരണം പരിഷ്‌ക്കരിക്കുക"</string>
+    <string name="angle_general_title" msgid="2911397494219665564">"പൊതുവായവ"</string>
+    <string name="use_angle_for_all_apps" msgid="7159750603157969808">"എല്ലാ ആപ്പുകൾക്കും ആംഗിൾ ഉപയോഗിക്കുക"</string>
+    <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ആംഗിൾ ലോഡ് ചെയ്‌ത് കഴിയുമ്പോൾ ഡയലോഗ് ബോക്‌സ് കാണിക്കുക"</string>
+    <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL ഡ്രൈവര്‍ തിരഞ്ഞെടുക്കുക"</string>
+    <string name="keywords" msgid="6896526627242346670">"angle, OpenGL, ഗ്രാഫിക്‌സ്"</string>
+    <!-- no translation found for angle_in_use_toast_message (8638956381155685435) -->
+    <skip />
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Copyright 2018 The ANGLE Project Authors. All rights reserved.  Use of this
+  source code is governed by a BSD-style license that can be found in the
+  LICENSE file.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="angle_preferences" msgid="265396893685363605">"Tùy chọn ANGLE"</string>
+    <string name="angle_preferences_summary" msgid="6924507658538947826">"Sửa đổi tùy chọn cài đặt ANGLE"</string>
+    <string name="angle_general_title" msgid="2911397494219665564">"Chung"</string>
+    <string name="use_angle_for_all_apps" msgid="7159750603157969808">"Sử dụng ANGLE cho tất cả ứng dụng"</string>
+    <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"Hiển thị hộp thoại khi ANGLE được tải"</string>
+    <string name="select_opengl_driver_title" msgid="8852165773811419193">"Chọn trình điều khiển OpenGL"</string>
+    <string name="keywords" msgid="6896526627242346670">"angle, opengl, đồ họa"</string>
+    <!-- no translation found for angle_in_use_toast_message (8638956381155685435) -->
+    <skip />
+</resources>
