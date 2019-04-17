@@ -14,6 +14,5 @@
     <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ANGLE이 로드되면 대화상자 표시"</string>
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL 드라이버 선택"</string>
     <string name="keywords" msgid="6896526627242346670">"angle, opengl, 그래픽"</string>
-    <!-- no translation found for angle_in_use_toast_message (8638956381155685435) -->
-    <skip />
+    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE을 사용 중입니다."</string>
 </resources>
