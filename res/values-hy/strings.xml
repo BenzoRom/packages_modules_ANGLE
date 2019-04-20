@@ -14,6 +14,5 @@
     <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"Ցույց տալ երկխոսության պատուհանը, երբ ANGLE-ը բեռնվում է"</string>
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"Ընտրեք OpenGL սարքավարը"</string>
     <string name="keywords" msgid="6896526627242346670">"ANGLE, OpenGL, գծապատկերներ"</string>
-    <!-- no translation found for angle_in_use_toast_message (8638956381155685435) -->
-    <skip />
+    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"Օգտագործվում է ANGLE հավելվածը"</string>
 </resources>
