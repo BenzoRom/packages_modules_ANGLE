@@ -102,7 +102,7 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
         mDriverListPrefs.clear();
         for (PackageInfo packageInfo : mInstalledPkgs)
         {
-            ListPreference listPreference = new ListPreference(getActivity());
+            ListPreference listPreference = new ListPreference(installedPkgsCat.getContext());
 
             initListPreference(packageInfo, listPreference);
 
