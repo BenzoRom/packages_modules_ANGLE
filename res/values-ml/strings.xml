@@ -14,6 +14,5 @@
     <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ആംഗിൾ ലോഡ് ചെയ്‌ത് കഴിയുമ്പോൾ ഡയലോഗ് ബോക്‌സ് കാണിക്കുക"</string>
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL ഡ്രൈവര്‍ തിരഞ്ഞെടുക്കുക"</string>
     <string name="keywords" msgid="6896526627242346670">"angle, OpenGL, ഗ്രാഫിക്‌സ്"</string>
-    <!-- no translation found for angle_in_use_toast_message (8638956381155685435) -->
-    <skip />
+    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE ഉപയോഗിക്കുന്നു"</string>
 </resources>

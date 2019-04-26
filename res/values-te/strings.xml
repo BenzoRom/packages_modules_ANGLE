@@ -14,6 +14,5 @@
     <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ANGLE లోడ్ అయినప్పుడు ఓ డైలాగ్ బాక్స్ చూపించు"</string>
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL డ్రైవర్‌ను ఎంచుకోండి"</string>
     <string name="keywords" msgid="6896526627242346670">"ANGLE, OpenGL, గ్రాఫిక్స్"</string>
-    <!-- no translation found for angle_in_use_toast_message (8638956381155685435) -->
-    <skip />
+    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLEను ఉపయోగిస్తోంది"</string>
 </resources>
