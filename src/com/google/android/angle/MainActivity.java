@@ -17,7 +17,6 @@ package com.google.android.angle;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 
 import com.android.angle.common.*;
 
