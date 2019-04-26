@@ -16,8 +16,8 @@
  -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="210000000"
-          android:versionName="210000000"
+          android:versionCode="220000000"
+          android:versionName="29 system image"
           package="com.google.android.angle">
 
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
