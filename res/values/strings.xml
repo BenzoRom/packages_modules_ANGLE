@@ -47,4 +47,10 @@
     'ANGLE' should not be translated, as it is an app name. -->
     <string name="angle_in_use_toast_message">Using ANGLE</string>
 
+    <!-- This is the title displayed when no apps are installed that ANGLE can be used for. -->
+    <string name="no_apps_installed_title">No available apps</string>
+
+    <!-- This is the summary displayed when no apps are installed that ANGLE can be used for. -->
+    <string name="no_apps_installed_summary">No apps installed that can use ANGLE</string>
+
 </resources>

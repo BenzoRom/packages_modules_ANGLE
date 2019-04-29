@@ -109,13 +109,17 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
                 (PreferenceCategory) findPreference(selectDriverCatKey);
         getInstalledPkgsList();
         mDriverListPrefs.clear();
-        for (PackageInfo packageInfo : mInstalledPkgs)
-        {
+        if (mInstalledPkgs.isEmpty()) {
             ListPreference listPreference = new ListPreference(installedPkgsCat.getContext());
-
-            initListPreference(packageInfo, listPreference);
-
+            initEmptyListPreference(listPreference);
             installedPkgsCat.addPreference(listPreference);
+        } else {
+            for (PackageInfo packageInfo : mInstalledPkgs)
+            {
+                ListPreference listPreference = new ListPreference(installedPkgsCat.getContext());
+                initListPreference(packageInfo, listPreference);
+                installedPkgsCat.addPreference(listPreference);
+            }
         }
     }
 
@@ -211,6 +215,19 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
     private String getAppName(PackageInfo packageInfo)
     {
         return packageInfo.applicationInfo.loadLabel(getActivity().getPackageManager()).toString();
+    }
+
+    private void initEmptyListPreference(ListPreference listPreference)
+    {
+        String noAppsInstalledTitle = getContext().getString(R.string.no_apps_installed_title);
+        listPreference.setTitle(noAppsInstalledTitle);
+
+        String noAppsInstalledSummary = getContext().getString(R.string.no_apps_installed_summary);
+        listPreference.setSummary(noAppsInstalledSummary);
+
+        listPreference.setSelectable(false);
+
+        mDriverListPrefs.add(listPreference);
     }
 
     private void initListPreference(PackageInfo packageInfo, ListPreference listPreference)
