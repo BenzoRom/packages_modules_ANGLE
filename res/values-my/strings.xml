@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-  Copyright 2018 The ANGLE Project Authors. All rights reserved.  Use of this
-  source code is governed by a BSD-style license that can be found in the
-  LICENSE file.
- -->
+    Copyright 2019 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+  -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -15,4 +25,8 @@
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL ဒရိုင်ဗာ ရွေးပါ"</string>
     <string name="keywords" msgid="6896526627242346670">"angle၊ opengl၊ ဂရပ်ဖစ်များ"</string>
     <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE အား အသုံးပြုနေပါသည်။"</string>
+    <!-- no translation found for no_apps_installed_title (6246240857512796455) -->
+    <skip />
+    <!-- no translation found for no_apps_installed_summary (1306835108727125068) -->
+    <skip />
 </resources>
