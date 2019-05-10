@@ -25,8 +25,6 @@
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL ഡ്രൈവര്‍ തിരഞ്ഞെടുക്കുക"</string>
     <string name="keywords" msgid="6896526627242346670">"angle, OpenGL, ഗ്രാഫിക്‌സ്"</string>
     <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE ഉപയോഗിക്കുന്നു"</string>
-    <!-- no translation found for no_apps_installed_title (6246240857512796455) -->
-    <skip />
-    <!-- no translation found for no_apps_installed_summary (1306835108727125068) -->
-    <skip />
+    <string name="no_apps_installed_title" msgid="6246240857512796455">"ലഭ്യമായ ആപ്പുകളൊന്നുമില്ല"</string>
+    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ആംഗിൾ ഉപയോഗിക്കാൻ കഴിയുന്ന ആപ്പുകളൊന്നും ഇൻസ്‌റ്റാൾ ചെയ്‌തിട്ടില്ല"</string>
 </resources>

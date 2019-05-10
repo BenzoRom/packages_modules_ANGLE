@@ -25,8 +25,6 @@
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL ಡ್ರೈವರ್‌ ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string>
     <string name="keywords" msgid="6896526627242346670">"angle, opengl, ಗ್ರಾಫಿಕ್ಸ್"</string>
     <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE ಅನ್ನು ಬಳಸಲಾಗುತ್ತಿದೆ"</string>
-    <!-- no translation found for no_apps_installed_title (6246240857512796455) -->
-    <skip />
-    <!-- no translation found for no_apps_installed_summary (1306835108727125068) -->
-    <skip />
+    <string name="no_apps_installed_title" msgid="6246240857512796455">"ಯಾವುದೇ ಆ್ಯಪ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ"</string>
+    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ಯಾವುದೇ ಆ್ಯಪ್‌ಗಳನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿಲ್ಲ, ANGLE ಬಳಸಬಹುದಾಗಿದೆ"</string>
 </resources>

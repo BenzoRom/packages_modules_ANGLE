@@ -25,8 +25,6 @@
     <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL 드라이버 선택"</string>
     <string name="keywords" msgid="6896526627242346670">"angle, opengl, 그래픽"</string>
     <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE을 사용 중입니다."</string>
-    <!-- no translation found for no_apps_installed_title (6246240857512796455) -->
-    <skip />
-    <!-- no translation found for no_apps_installed_summary (1306835108727125068) -->
-    <skip />
+    <string name="no_apps_installed_title" msgid="6246240857512796455">"사용 가능한 앱이 없음"</string>
+    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ANGLE을 사용할 수 있는 앱이 설치되어 있지 않습니다."</string>
 </resources>
