@@ -26,5 +26,5 @@
     <string name="keywords" msgid="6896526627242346670">"angle, opengl, ກຣາບຟິກ"</string>
     <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ກຳລັງໃຊ້ ANGLE"</string>
     <string name="no_apps_installed_title" msgid="6246240857512796455">"ບໍ່ມີແອັບທີ່ໃຊ້ໄດ້"</string>
-    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ບໍ່ມີແອັບທີ່ສາມາດໃຊ້ ANGLE ຕິດຕັ້ງໄວ້"</string>
+    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ບໍ່ມີແອັບທີ່ຕິດຕັ້ງໄວ້ ສາມາດໃຊ້ ANGLE"</string>
 </resources>
