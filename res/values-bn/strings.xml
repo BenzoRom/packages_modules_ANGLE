@@ -17,14 +17,14 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="angle_preferences" msgid="265396893685363605">"ANGLE সংক্রান্ত অভিরুচি"</string>
-    <string name="angle_preferences_summary" msgid="6924507658538947826">"ANGLE সেটিংস পরিবর্তন করুন"</string>
-    <string name="angle_general_title" msgid="2911397494219665564">"সাধারণ"</string>
-    <string name="use_angle_for_all_apps" msgid="7159750603157969808">"সমস্ত অ্যাপের জন্য ANGLE ব্যবহার করুন"</string>
-    <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ANGLE লোড হওয়ার সময় ডায়ালগ বক্স দেখুন"</string>
-    <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL ড্রাইভার বেছে নিন"</string>
-    <string name="keywords" msgid="6896526627242346670">"angle, opengl, গ্রাফিক্স"</string>
-    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE ব্যবহার করা হচ্ছে"</string>
-    <string name="no_apps_installed_title" msgid="6246240857512796455">"কোনও অ্যাপ উপলভ্য নেই"</string>
-    <string name="no_apps_installed_summary" msgid="1306835108727125068">"এমন কোনও অ্যাপ ইনস্টল করা নেই যা ANGLE ব্যবহার করতে পারে"</string>
+    <string name="angle_preferences" msgid="6277781974712663825">"ANGLE সংক্রান্ত অভিরুচি"</string>
+    <string name="angle_preferences_summary" msgid="2072062114797067545">"ANGLE সেটিংস পরিবর্তন করুন"</string>
+    <string name="angle_general_title" msgid="3851397617183360026">"সাধারণ"</string>
+    <string name="use_angle_for_all_apps" msgid="2562678044041239694">"সমস্ত অ্যাপের জন্য ANGLE ব্যবহার করুন"</string>
+    <string name="show_angle_in_use_dialog_box" msgid="3443250434026000754">"ANGLE লোড হওয়ার সময় ডায়ালগ বক্স দেখুন"</string>
+    <string name="select_opengl_driver_title" msgid="3474220741139386304">"OpenGL ড্রাইভার বেছে নিন"</string>
+    <string name="keywords" msgid="6388635548060461395">"angle, opengl, গ্রাফিক্স"</string>
+    <string name="angle_in_use_toast_message" msgid="2259434197861979558">"ANGLE ব্যবহার করা হচ্ছে"</string>
+    <string name="no_apps_installed_title" msgid="1651834541419890603">"কোনও অ্যাপ উপলভ্য নেই"</string>
+    <string name="no_apps_installed_summary" msgid="1922829522692497596">"এমন কোনও অ্যাপ ইনস্টল করা নেই যা ANGLE ব্যবহার করতে পারে"</string>
 </resources>
