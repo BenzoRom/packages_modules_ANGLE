@@ -17,14 +17,14 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="angle_preferences" msgid="265396893685363605">"ການຕັ້ງຄ່າ ANGLE"</string>
-    <string name="angle_preferences_summary" msgid="6924507658538947826">"ແກ້ໄຂການຕັ້ງຄ່າ ANGLE"</string>
-    <string name="angle_general_title" msgid="2911397494219665564">"ທົ່ວໄປ"</string>
-    <string name="use_angle_for_all_apps" msgid="7159750603157969808">"ໃຊ້ ANGLE ສຳລັບທຸກແອັບ"</string>
-    <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ສະແດງກ່ອງຂໍ້ຄວາມເມື່ອໂຫຼດ ANGLE ແລ້ວ"</string>
-    <string name="select_opengl_driver_title" msgid="8852165773811419193">"ເລືອກໄດຣເວີ OpenGL"</string>
-    <string name="keywords" msgid="6896526627242346670">"angle, opengl, ກຣາບຟິກ"</string>
-    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ກຳລັງໃຊ້ ANGLE"</string>
-    <string name="no_apps_installed_title" msgid="6246240857512796455">"ບໍ່ມີແອັບທີ່ໃຊ້ໄດ້"</string>
-    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ບໍ່ມີແອັບທີ່ຕິດຕັ້ງໄວ້ ສາມາດໃຊ້ ANGLE"</string>
+    <string name="angle_preferences" msgid="6277781974712663825">"ການຕັ້ງຄ່າ ANGLE"</string>
+    <string name="angle_preferences_summary" msgid="2072062114797067545">"ແກ້ໄຂການຕັ້ງຄ່າ ANGLE"</string>
+    <string name="angle_general_title" msgid="3851397617183360026">"ທົ່ວໄປ"</string>
+    <string name="use_angle_for_all_apps" msgid="2562678044041239694">"ໃຊ້ ANGLE ສຳລັບທຸກແອັບ"</string>
+    <string name="show_angle_in_use_dialog_box" msgid="3443250434026000754">"ສະແດງກ່ອງຂໍ້ຄວາມເມື່ອໂຫຼດ ANGLE ແລ້ວ"</string>
+    <string name="select_opengl_driver_title" msgid="3474220741139386304">"ເລືອກໄດຣເວີ OpenGL"</string>
+    <string name="keywords" msgid="6388635548060461395">"angle, opengl, ກຣາບຟິກ"</string>
+    <string name="angle_in_use_toast_message" msgid="2259434197861979558">"ກຳລັງໃຊ້ ANGLE"</string>
+    <string name="no_apps_installed_title" msgid="1651834541419890603">"ບໍ່ມີແອັບທີ່ໃຊ້ໄດ້"</string>
+    <string name="no_apps_installed_summary" msgid="1922829522692497596">"ບໍ່ມີແອັບທີ່ຕິດຕັ້ງໄວ້ ສາມາດໃຊ້ ANGLE"</string>
 </resources>

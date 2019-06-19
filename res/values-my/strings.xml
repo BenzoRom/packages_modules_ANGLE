@@ -17,14 +17,14 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="angle_preferences" msgid="265396893685363605">"ANGLE သတ်မှတ်ချက်များ"</string>
-    <string name="angle_preferences_summary" msgid="6924507658538947826">"ANGLE ဆက်တင်များ ပြန်ပြင်ပေးသည်"</string>
-    <string name="angle_general_title" msgid="2911397494219665564">"အထွေထွေ"</string>
-    <string name="use_angle_for_all_apps" msgid="7159750603157969808">"အက်ပ်အားလုံးအတွက် ANGLE သုံးရန်"</string>
-    <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ANGLE ဖွင့်ထားသည့်အခါ ဒိုင်ယာလော့ဂ်အကွက်ကို ပြရန်"</string>
-    <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL ဒရိုင်ဗာ ရွေးပါ"</string>
-    <string name="keywords" msgid="6896526627242346670">"angle၊ opengl၊ ဂရပ်ဖစ်များ"</string>
-    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE အား အသုံးပြုနေပါသည်။"</string>
-    <string name="no_apps_installed_title" msgid="6246240857512796455">"သုံးနိုင်သောအက်ပ် မရှိပါ"</string>
-    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ANGLE ကို သုံးနိုင်သော အက်ပ်တစ်ခုမျှ ထည့်သွင်းမထားပါ"</string>
+    <string name="angle_preferences" msgid="6277781974712663825">"ANGLE သတ်မှတ်ချက်များ"</string>
+    <string name="angle_preferences_summary" msgid="2072062114797067545">"ANGLE ဆက်တင်များ ပြန်ပြင်ပေးသည်"</string>
+    <string name="angle_general_title" msgid="3851397617183360026">"အထွေထွေ"</string>
+    <string name="use_angle_for_all_apps" msgid="2562678044041239694">"အက်ပ်အားလုံးအတွက် ANGLE သုံးရန်"</string>
+    <string name="show_angle_in_use_dialog_box" msgid="3443250434026000754">"ANGLE ဖွင့်ထားသည့်အခါ ဒိုင်ယာလော့ဂ်အကွက်ကို ပြရန်"</string>
+    <string name="select_opengl_driver_title" msgid="3474220741139386304">"OpenGL ဒရိုင်ဗာ ရွေးပါ"</string>
+    <string name="keywords" msgid="6388635548060461395">"angle၊ opengl၊ ဂရပ်ဖစ်များ"</string>
+    <string name="angle_in_use_toast_message" msgid="2259434197861979558">"ANGLE အား အသုံးပြုနေပါသည်။"</string>
+    <string name="no_apps_installed_title" msgid="1651834541419890603">"သုံးနိုင်သောအက်ပ် မရှိပါ"</string>
+    <string name="no_apps_installed_summary" msgid="1922829522692497596">"ANGLE ကို သုံးနိုင်သော အက်ပ်တစ်ခုမျှ ထည့်သွင်းမထားပါ"</string>
 </resources>
