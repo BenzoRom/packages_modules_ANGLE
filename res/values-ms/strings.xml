@@ -17,14 +17,14 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="angle_preferences" msgid="265396893685363605">"Pilihan ANGLE"</string>
-    <string name="angle_preferences_summary" msgid="6924507658538947826">"Ubah suai tetapan ANGLE"</string>
-    <string name="angle_general_title" msgid="2911397494219665564">"Umum"</string>
-    <string name="use_angle_for_all_apps" msgid="7159750603157969808">"Gunakan ANGLE untuk semua apl"</string>
-    <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"Tunjukkan kotak dialog apabila ANGLE dimuatkan"</string>
-    <string name="select_opengl_driver_title" msgid="8852165773811419193">"Pilih Pemacu OpenGL"</string>
-    <string name="keywords" msgid="6896526627242346670">"angle, opengl, grafik"</string>
-    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"Menggunakan ANGLE"</string>
-    <string name="no_apps_installed_title" msgid="6246240857512796455">"Tiada apl yang tersedia"</string>
-    <string name="no_apps_installed_summary" msgid="1306835108727125068">"Tiada apl terpasang yang dapat menggunakan ANGLE"</string>
+    <string name="angle_preferences" msgid="6277781974712663825">"Pilihan ANGLE"</string>
+    <string name="angle_preferences_summary" msgid="2072062114797067545">"Ubah suai tetapan ANGLE"</string>
+    <string name="angle_general_title" msgid="3851397617183360026">"Umum"</string>
+    <string name="use_angle_for_all_apps" msgid="2562678044041239694">"Gunakan ANGLE untuk semua apl"</string>
+    <string name="show_angle_in_use_dialog_box" msgid="3443250434026000754">"Tunjukkan kotak dialog apabila ANGLE dimuatkan"</string>
+    <string name="select_opengl_driver_title" msgid="3474220741139386304">"Pilih Pemacu OpenGL"</string>
+    <string name="keywords" msgid="6388635548060461395">"angle, opengl, grafik"</string>
+    <string name="angle_in_use_toast_message" msgid="2259434197861979558">"Menggunakan ANGLE"</string>
+    <string name="no_apps_installed_title" msgid="1651834541419890603">"Tiada apl yang tersedia"</string>
+    <string name="no_apps_installed_summary" msgid="1922829522692497596">"Tiada apl terpasang yang dapat menggunakan ANGLE"</string>
 </resources>

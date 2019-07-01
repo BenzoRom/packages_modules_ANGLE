@@ -17,14 +17,14 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="angle_preferences" msgid="265396893685363605">"ANGLE-н сонголт"</string>
-    <string name="angle_preferences_summary" msgid="6924507658538947826">"ANGLE тохиргоог өөрчлөх"</string>
-    <string name="angle_general_title" msgid="2911397494219665564">"Ерөнхий"</string>
-    <string name="use_angle_for_all_apps" msgid="7159750603157969808">"ANGLE-г бүх аппад ашиглах"</string>
-    <string name="show_angle_in_use_dialog_box" msgid="5388136480154776352">"ANGLE-г ачаалах үед харилцах цонх харуулах"</string>
-    <string name="select_opengl_driver_title" msgid="8852165773811419193">"OpenGL драйвер сонгох"</string>
-    <string name="keywords" msgid="6896526627242346670">"angle, opengl, graphics"</string>
-    <string name="angle_in_use_toast_message" msgid="8638956381155685435">"ANGLE-г ашиглаж байна"</string>
-    <string name="no_apps_installed_title" msgid="6246240857512796455">"Боломжтой апп алга"</string>
-    <string name="no_apps_installed_summary" msgid="1306835108727125068">"ANGLE-г ашиглах боломжтой апп суулгаагүй байна"</string>
+    <string name="angle_preferences" msgid="6277781974712663825">"ANGLE-н сонголт"</string>
+    <string name="angle_preferences_summary" msgid="2072062114797067545">"ANGLE тохиргоог өөрчлөх"</string>
+    <string name="angle_general_title" msgid="3851397617183360026">"Ерөнхий"</string>
+    <string name="use_angle_for_all_apps" msgid="2562678044041239694">"ANGLE-г бүх аппад ашиглах"</string>
+    <string name="show_angle_in_use_dialog_box" msgid="3443250434026000754">"ANGLE-г ачаалах үед харилцах цонх харуулах"</string>
+    <string name="select_opengl_driver_title" msgid="3474220741139386304">"OpenGL драйвер сонгох"</string>
+    <string name="keywords" msgid="6388635548060461395">"angle, opengl, graphics"</string>
+    <string name="angle_in_use_toast_message" msgid="2259434197861979558">"ANGLE-г ашиглаж байна"</string>
+    <string name="no_apps_installed_title" msgid="1651834541419890603">"Боломжтой апп алга"</string>
+    <string name="no_apps_installed_summary" msgid="1922829522692497596">"ANGLE-г ашиглах боломжтой апп суулгаагүй байна"</string>
 </resources>
