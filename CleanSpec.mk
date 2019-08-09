@@ -55,6 +55,8 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/product/priv-app/GoogleANGLE)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/product/priv-app/GoogleANGLE)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/product/priv-app/GoogleANGLE)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/product/priv-app/GoogleANGLE)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/product/priv-app/GoogleANGLE)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/product/priv-app/GoogleANGLE)
 
 # ************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST
