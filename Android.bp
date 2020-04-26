@@ -116,6 +116,14 @@ cc_prebuilt_library_shared {
     product_specific: true
 }
 
+prebuilt_etc {
+    name: "privapp_whitelist_com.android.angle",
+    product_specific: true,
+    sub_dir: "permissions",
+    src: "com.android.angle.xml",
+    filename_from_src: true,
+}
+
 java_defaults {
     name: "ANGLE_defaults",
     sdk_version: "system_28",
@@ -152,24 +160,12 @@ java_defaults {
 }
 
 android_app {
-    name: "AospANGLE",
+    name: "ANGLEPrebuilt",
 
     defaults: ["ANGLE_defaults"],
 
     srcs: ["src/com/android/angle/*.java"],
 
     manifest: "src/com/android/angle/AndroidManifest.xml",
-}
-
-android_app {
-    name: "GoogleANGLE",
-
-    defaults: ["ANGLE_defaults"],
-
-    srcs: ["src/com/google/android/angle/*.java"],
-
-    manifest: "src/com/google/android/angle/AndroidManifest.xml",
-
-    certificate: ":com_google_android_angle_container",
-    owner: "google",
+    required: ["privapp_whitelist_com.android.angle"],
 }
