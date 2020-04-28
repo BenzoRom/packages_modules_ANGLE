@@ -23,13 +23,12 @@ import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.os.Process;
 import android.util.Log;
-
-import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
+import androidx.preference.SwitchPreference;
 
 import java.text.Collator;
 import java.util.ArrayList;
@@ -333,7 +332,6 @@ public class MainFragment extends PreferenceFragment implements OnSharedPreferen
                 String defaultDriver = getContext().getString(R.string.default_driver);
                 editor.putString(packageInfo.packageName, defaultDriver);
             }
-
         }
 
         editor.apply();

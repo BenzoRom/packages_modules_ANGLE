@@ -25,7 +25,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
-
 import androidx.preference.PreferenceManager;
 
 import org.json.JSONArray;
@@ -38,7 +37,7 @@ import java.io.InputStream;
 public class Receiver extends BroadcastReceiver
 {
 
-    private static final String TAG = "AngleReceiver";
+    private static final String TAG              = "AngleReceiver";
     private static final String ANGLE_RULES_FILE = "a4a_rules.json";
 
     @Override
@@ -52,7 +51,7 @@ public class Receiver extends BroadcastReceiver
             results.putString(context.getString(R.string.intent_key_a4a_toast_message),
                     context.getString(R.string.angle_in_use_toast_message));
         } else {
-            String jsonStr = loadRules(context);
+            String jsonStr      = loadRules(context);
             String packageNames = parsePackageNames(jsonStr);
 
             // Update the ANGLE whitelist
@@ -73,12 +72,11 @@ public class Receiver extends BroadcastReceiver
 
         try {
             InputStream rulesStream = context.getAssets().open(ANGLE_RULES_FILE);
-            int size = rulesStream.available();
-            byte[] buffer = new byte[size];
+            int size                = rulesStream.available();
+            byte[] buffer           = new byte[size];
             rulesStream.read(buffer);
             rulesStream.close();
             jsonStr = new String(buffer, "UTF-8");
-
         } catch (IOException ioe) {
             Log.e(TAG, "Failed to open " + ANGLE_RULES_FILE + ": ", ioe);
         }
@@ -95,14 +93,14 @@ public class Receiver extends BroadcastReceiver
 
         try {
             JSONObject jsonObj = new JSONObject(rulesJSON);
-            JSONArray rules = jsonObj.getJSONArray("Rules");
+            JSONArray rules    = jsonObj.getJSONArray("Rules");
             if (rules == null) {
                 Log.e(TAG, "No Rules in " + ANGLE_RULES_FILE);
                 return null;
             }
             for (int i = 0; i < rules.length(); i++) {
                 JSONObject rule = rules.getJSONObject(i);
-                JSONArray apps = rule.optJSONArray("Applications");
+                JSONArray apps  = rule.optJSONArray("Applications");
                 if (apps == null) {
                     Log.v(TAG, "Skipping Rules entry with no Applications");
                     continue;
@@ -120,7 +118,7 @@ public class Receiver extends BroadcastReceiver
                 }
             }
             Log.v(TAG, "Parsed the following package names from " +
-                    ANGLE_RULES_FILE + ": " + packageNames);
+                  ANGLE_RULES_FILE + ": " + packageNames);
         } catch (JSONException je) {
             Log.e(TAG, "Error when parsing angle JSON: ", je);
             return null;

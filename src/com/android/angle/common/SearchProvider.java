@@ -16,15 +16,15 @@
 
 package com.android.angle.common;
 
-import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS;
-import static android.provider.SearchIndexablesContract.INDEXABLES_RAW_COLUMNS;
-import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEY;
-import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_TITLE;
-import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_SUMMARY_ON;
-import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEYWORDS;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_ACTION;
-import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE;
 import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_TARGET_CLASS;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEY;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_KEYWORDS;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_SUMMARY_ON;
+import static android.provider.SearchIndexablesContract.COLUMN_INDEX_RAW_TITLE;
+import static android.provider.SearchIndexablesContract.INDEXABLES_RAW_COLUMNS;
+import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS;
 
 import android.content.Context;
 import android.content.Intent;
@@ -50,13 +50,13 @@ public class SearchProvider extends SearchIndexablesProvider {
     @Override
     public Cursor queryRawData(String[] projection) {
         MatrixCursor cursor = new MatrixCursor(INDEXABLES_RAW_COLUMNS);
-        Context context = getContext();
+        Context context     = getContext();
 
-        Object[] ref = new Object[INDEXABLES_RAW_COLUMNS.length];
-        ref[COLUMN_INDEX_RAW_KEY] = context.getString(R.string.angle_preferences);
-        ref[COLUMN_INDEX_RAW_TITLE] = context.getString(R.string.angle_preferences);
-        ref[COLUMN_INDEX_RAW_SUMMARY_ON] = context.getString(R.string.angle_preferences_summary);
-        ref[COLUMN_INDEX_RAW_KEYWORDS] = context.getString(R.string.keywords);
+        Object[] ref                        = new Object[INDEXABLES_RAW_COLUMNS.length];
+        ref[COLUMN_INDEX_RAW_KEY]           = context.getString(R.string.angle_preferences);
+        ref[COLUMN_INDEX_RAW_TITLE]         = context.getString(R.string.angle_preferences);
+        ref[COLUMN_INDEX_RAW_SUMMARY_ON]    = context.getString(R.string.angle_preferences_summary);
+        ref[COLUMN_INDEX_RAW_KEYWORDS]      = context.getString(R.string.keywords);
         ref[COLUMN_INDEX_RAW_INTENT_ACTION] = Intent.ACTION_MAIN;
         ref[COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE] = getContext().getApplicationInfo().packageName;
         ref[COLUMN_INDEX_RAW_INTENT_TARGET_CLASS] = getContext().getApplicationInfo().packageName + ".MainActivity";
